@@ -1,10 +1,226 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>mon-portofolio</title>
-    </head>
-    <body>
-      salut
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: white;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #26334d;
+    }
+
+    header h2 {
+      color: #818cf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #818cf8;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 6vw, 55px);
+      margin: 15px 0;
+    }
+
+    .hero h1 span {
+      color: #818cf8;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #cbd5e1;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 6px;
+      background: #6366f1;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: #4f46e5;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151d30;
+      border: 1px solid #293650;
+      padding: 25px;
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      color: #a5b4fc;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    .discord {
+      text-align: center;
+      background: #11182a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+      border-top: 1px solid #26334d;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>MON PORTFOLIO</h2>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#future">Objectif</a>
+      <a href="#discord">Discord</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <p>💻 Informatique • Réseau • Cybersécurité</p>
+
+    <h1>Salut, moi c'est <span>zetsulow</span></h1>
+
+    <p>
+      Passionné d'informatique, je développe mes compétences,
+      j'apprends à coder et je travaille sur de nouveaux projets.
+      Bienvenue sur mon portfolio !
+    </p>
+
+    <a href="#skills" class="button">
+      Découvrir mes compétences
+    </a>
+
+    <a href="#discord" class="button">
+      Mon serveur Discord
+    </a>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">💻 Mes compétences</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🌐 HTML & CSS</h3>
+        <p>Créer et styliser des sites web.</p>
+      </div>
+
+      <div class="card">
+        <h3>⚡ JavaScript</h3>
+        <p>Apprendre à rendre les sites interactifs.</p>
+      </div>
+
+      <div class="card">
+        <h3>🖥️ Informatique</h3>
+        <p>Découvrir les systèmes, les logiciels
+        et les nouvelles technologies.</p>
+      </div>
+
+      <div class="card">
+        <h3>🚀 Mes projets</h3>
+        <p>Créer des projets personnels et
+        améliorer mes compétences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="future">
+    <h2 class="section-title">🎯 Mon objectif</h2>
+
+    <div class="card">
+      <h3>Ce que je veux devenir</h3>
+      <p>
+        Mon objectif est de devenir Adiministrateur réseau/sys.
+        Je souhaite apprendre de nouvelles technologies,
+        réaliser des projets et progresser en informatique.
+      </p>
+    </div>
+  </section>
+
+  <section class="discord" id="discord">
+    <h2 class="section-title">💬 Mon serveur Discord</h2>
+
+    <p>
+      Rejoins mon serveur Discord : 1020sec !
+    </p>
+
+    <!-- Remplace le lien ci-dessous par ton
+         véritable lien d'invitation Discord. -->
+    <a
+      href="https://discord.gg/TON-CODE"
+      class="button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Rejoindre le serveur
+    </a>
+  </section>
+
+  <footer>
+    © 2026 TON PSEUDO — Portfolio personnel
+  </footer>
+</body>
 </html>
