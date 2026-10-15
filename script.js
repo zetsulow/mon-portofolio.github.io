@@ -1,1 +1,1 @@
-<button id="dark-mode-toggle">Mode Sombre / Clair</button>
+console.log("Le script JavaScript est bien chargé !");
