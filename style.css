@@ -1,12 +1,117 @@
-/* Style par défaut (Mode Clair) */
-body {
-    background-color: #ffffff;
-    color: #000000;
-    transition: background-color 0.3s, color 0.3s; /* Transition fluide */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Style quand le mode sombre est activé */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: white;
+  line-height: 1.7;
+}
+
+header {
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #26334d;
+}
+
+header h2 {
+  color: #818cf8;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #818cf8;
+}
+
+section {
+  padding: 70px 8%;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 55px);
+  margin: 15px 0;
+}
+
+.hero h1 span {
+  color: #818cf8;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  color: #cbd5e1;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  margin: 6px;
+  background: #6366f1;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #4f46e5;
+}
+
+h2.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #151d30;
+  border: 1px solid #293650;
+  padding: 25px;
+  border-radius: 14px;
+}
+
+.card h3 {
+  color: #a5b4fc;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #cbd5e1;
+}
+
+.discord {
+  text-align: center;
+  background: #11182a;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #94a3b8;
+  border-top: 1px solid #26334d;
+}
+
+html {
+  scroll-behavior: smooth;
 }
