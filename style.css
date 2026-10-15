@@ -1,22 +1,12 @@
-/* Tout le fond de la page devient sombre et moderne */
+/* Style par défaut (Mode Clair) */
 body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s; /* Transition fluide */
+}
+
+/* Style quand le mode sombre est activé */
+body.dark-mode {
     background-color: #121212;
     color: #ffffff;
-    font-family: Arial, sans-serif;
-}
-
-/* Tous tes boutons auront un style stylé et s'animeront */
-button {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    transition: 0.3s; /* Effet fluide */
-}
-
-/* Quand la souris passe sur le bouton */
-button:hover {
-    background-color: #2980b9;
-    cursor: pointer;
 }
