@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
-  
-  <!-- Lien vers ton fichier CSS séparé -->
+  <title>Mon Portfolio - Zetsulow</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
   <header>
     <h2>MON PORTFOLIO</h2>
     <nav>
@@ -33,41 +31,58 @@
   <section id="skills">
     <h2 class="section-title">Mes compétences</h2>
 
+    <!-- Grille de cartes interactives qui se retournent -->
     <div class="cards">
-      <div class="card">
-        <h3>🌐 Réseau</h3>
-        <p>Créer une infra réseau sur des logiciels comme Cisco Packet Tracer.</p>
+      
+      <!-- Carte 1 : Réseau -->
+      <div class="carte-conteneur">
+        <div class="carte">
+          <div class="face avant">
+            <h3>🌐 Réseau</h3>
+            <p>Clique pour voir les détails</p>
+          </div>
+          <div class="face arriere">
+            <h3>🌐 Réseau</h3>
+            <p>Créer une infra réseau sur des logiciels comme Cisco Packet Tracer.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>🖥️ Informatique</h3>
-        <p>J'ai des compétences en hardware (savoir les principaux composants, monter/démonter des PC) et en software (j'apprends à coder).</p>
+      <!-- Carte 2 : Informatique -->
+      <div class="carte-conteneur">
+        <div class="carte">
+          <div class="face avant">
+            <h3>🖥️ Informatique</h3>
+            <p>Clique pour voir les détails</p>
+          </div>
+          <div class="face arriere">
+            <h3>🖥️ Informatique</h3>
+            <p>Compétences en hardware (composants, montage PC) et software (apprentissage du code).</p>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>🚀 Mes futurs projets / en cours</h3>
-        <p>Créer un homelab, créer ce portfolio.</p>
+      <!-- Carte 3 : Projets -->
+      <div class="carte-conteneur">
+        <div class="carte">
+          <div class="face avant">
+            <h3>🚀 Projets</h3>
+            <p>Clique pour voir les détails</p>
+          </div>
+          <div class="face arriere">
+            <h3>🚀 Mes futurs projets</h3>
+            <p>Créer un homelab, créer ce portfolio et développer mes compétences.</p>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
-  
-<div class="carte-conteneur">
-  <div class="carte">
-    <div class="face avant">
-      <h3>Face Avant</h3>
-      <p>Clique pour retourner !</p>
-    </div>
-    <div class="face arriere">
-      <h3>Face Arrière</h3>
-      <p>Voici le contenu caché.</p>
-    </div>
-  </div>
-</div>
 
   <section id="future">
     <h2 class="section-title">🎯 Mon objectif</h2>
 
-    <div class="card">
+    <div class="card-objectif">
       <h3>Ce que je veux devenir</h3>
       <p>Mon objectif est de devenir Administrateur réseau / sys.</p>
     </div>
@@ -75,17 +90,10 @@
 
   <section class="discord" id="discord">
     <h2 class="section-title">💬 Mon serveur Discord</h2>
-
     <p>
-      Rejoins mon serveur Discord : 1020sec ! Tu aura des tutos dans différents domaines de l'informatique.
+      Rejoins mon serveur Discord : 1020sec ! Tu auras des tutos dans différents domaines de l'informatique.
     </p>
-
-    <a
-      href="https://discord.gg/Vk47rW3Bcq"
-      class="button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href="https://discord.gg/Vk47rW3Bcq" class="button" target="_blank" rel="noopener noreferrer">
       Rejoindre le serveur
     </a>
   </section>
@@ -94,7 +102,6 @@
     © 2026 Zetsulow — Portfolio personnel
   </footer>
 
-  <!-- Lien vers ton fichier JavaScript à la fin du body -->
   <script src="script.js"></script>
 </body>
 </html>
